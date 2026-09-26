@@ -1,0 +1,153 @@
+/* Shared print styles for Pack 149 Webelos materials.
+   Designed for US Letter paper; reads fine in black & white. */
+
+@page { size: Letter; margin: 0.55in 0.6in; }
+
+:root {
+  --blue: #003f87;
+  --blue-soft: #e6eef8;
+  --gold: #f2a900;
+  --gold-soft: #fff5d9;
+  --ink: #1d1d1f;
+  --muted: #555;
+  --line: #c9d3e0;
+  --red-soft: #fde8e8;
+  --red: #a4161a;
+  --green-soft: #e7f5ea;
+  --green: #1e6b34;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.38;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page { page-break-after: always; break-after: page; }
+.page:last-child { page-break-after: auto; break-after: auto; }
+.avoid-break { break-inside: avoid; page-break-inside: avoid; }
+
+h1, h2, h3, h4 { color: var(--blue); margin: 0 0 0.35em; line-height: 1.15; }
+h1 { font-size: 26pt; }
+h2 { font-size: 16pt; border-bottom: 3px solid var(--gold); padding-bottom: 3px; margin-top: 0.9em; }
+h3 { font-size: 12.5pt; margin-top: 0.8em; }
+h4 { font-size: 11pt; margin-top: 0.6em; }
+p { margin: 0 0 0.55em; }
+ul, ol { margin: 0.2em 0 0.6em; padding-left: 1.35em; }
+li { margin-bottom: 0.2em; }
+small, .muted { color: var(--muted); }
+
+/* Header band used at the top of each document / handout */
+.band {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--blue); color: #fff;
+  padding: 10px 16px; border-radius: 8px; margin-bottom: 14px;
+}
+.band .pack { font-weight: 700; letter-spacing: 0.04em; font-size: 10pt; text-transform: uppercase; }
+.band .tag { background: var(--gold); color: var(--ink); font-weight: 700; font-size: 9pt;
+  padding: 3px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* Cover */
+.cover { text-align: center; padding-top: 0.9in; }
+.cover h1 { font-size: 40pt; margin-bottom: 0.1em; }
+.cover .sub { font-size: 16pt; color: var(--muted); margin-bottom: 0.6in; }
+.cover .badge {
+  width: 2.6in; height: 2.6in; margin: 0 auto 0.5in; border-radius: 50%;
+  border: 8px solid var(--gold); background: var(--blue); color: #fff;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.cover .badge .big { font-size: 26pt; font-weight: 800; letter-spacing: 0.04em; }
+.cover .badge .small { font-size: 11pt; opacity: 0.9; }
+.cover .meta { font-size: 11pt; color: var(--muted); }
+.cover .meta b { color: var(--ink); }
+
+/* Callout boxes */
+.box { border-radius: 8px; padding: 10px 14px; margin: 10px 0; border: 1.5px solid var(--line); }
+.box > :last-child { margin-bottom: 0; }
+.box h4, .box h3 { margin-top: 0; }
+.say { background: var(--blue-soft); border-color: #9fb8da; }
+.say::before { content: "SAY IT LIKE THIS"; display: block; font-size: 8pt; font-weight: 800;
+  letter-spacing: 0.1em; color: var(--blue); margin-bottom: 4px; }
+.do { background: var(--gold-soft); border-color: #eccb6e; }
+.do::before { content: "ACTIVITY"; display: block; font-size: 8pt; font-weight: 800;
+  letter-spacing: 0.1em; color: #7a5600; margin-bottom: 4px; }
+.safety { background: var(--red-soft); border-color: #f1a9a9; }
+.safety::before { content: "SAFETY FIRST"; display: block; font-size: 8pt; font-weight: 800;
+  letter-spacing: 0.1em; color: var(--red); margin-bottom: 4px; }
+.check { background: var(--green-soft); border-color: #a5d4b1; }
+.check::before { content: "CHECK FOR UNDERSTANDING"; display: block; font-size: 8pt; font-weight: 800;
+  letter-spacing: 0.1em; color: var(--green); margin-bottom: 4px; }
+.note { background: #f5f5f7; }
+
+/* Requirement header */
+.req {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--blue); color: #fff; border-radius: 8px; padding: 10px 14px; margin: 4px 0 10px;
+}
+.req .num { background: var(--gold); color: var(--ink); font-weight: 800; font-size: 18pt;
+  min-width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.req .text { font-size: 11.5pt; }
+.req .text b { display: block; font-size: 8.5pt; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; }
+
+/* Tables */
+table { border-collapse: collapse; width: 100%; margin: 6px 0 10px; font-size: 10pt; }
+th, td { border: 1px solid var(--line); padding: 5px 7px; vertical-align: top; text-align: left; }
+th { background: var(--blue-soft); color: var(--blue); }
+td.center, th.center { text-align: center; }
+.tracker td { height: 0.36in; }
+
+/* Two-column helpers */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.cols-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+
+/* Checkbox list */
+ul.checks { list-style: none; padding-left: 0; }
+ul.checks li { padding-left: 1.6em; position: relative; }
+ul.checks li::before { content: ""; position: absolute; left: 0; top: 0.15em;
+  width: 0.85em; height: 0.85em; border: 1.5px solid var(--ink); border-radius: 2px; }
+
+/* Write-in lines */
+.line { border-bottom: 1px solid var(--ink); display: inline-block; min-width: 2.2in; height: 1.1em; }
+.lines div { border-bottom: 1px solid #999; height: 0.34in; }
+
+/* Kid handouts: bigger, friendlier type */
+.handout { font-size: 12.5pt; }
+.handout h1 { font-size: 28pt; text-align: center; margin-bottom: 0.05em; }
+.handout .lede { text-align: center; font-size: 13pt; color: var(--muted); margin-bottom: 12px; }
+.card { border: 2px solid var(--blue); border-radius: 10px; padding: 10px 12px; }
+.card h3 { margin-top: 0; }
+.letter-tile { display: inline-flex; align-items: center; justify-content: center;
+  width: 1.5em; height: 1.5em; border-radius: 6px; background: var(--gold); font-weight: 800; margin-right: 6px; }
+.name-line { text-align: right; font-size: 11pt; margin-bottom: 6px; }
+
+/* Word search */
+table.ws { width: auto; margin: 8px auto; border-collapse: collapse; }
+table.ws td { width: 0.42in; height: 0.42in; text-align: center; vertical-align: middle;
+  font-family: "Courier New", monospace; font-size: 15pt; font-weight: 700; border: 1px solid #bbb; padding: 0; }
+table.ws.key td { width: 0.3in; height: 0.3in; font-size: 11pt; }
+table.ws td.hit { background: var(--gold); }
+
+footer.foot { margin-top: 10px; font-size: 8.5pt; color: var(--muted); text-align: center; }
+
+/* Compact mode for dense adult-facing documents (leader guides, letters) */
+body.compact { font-size: 9.8pt; line-height: 1.3; }
+body.compact h1 { font-size: 22pt; }
+body.compact h2 { font-size: 13.5pt; margin-top: 0.6em; }
+body.compact h3 { font-size: 11pt; margin-top: 0.55em; }
+body.compact .box { padding: 6px 10px; margin: 7px 0; }
+body.compact .req { padding: 7px 12px; margin-bottom: 7px; }
+body.compact .req .num { min-width: 34px; height: 34px; font-size: 15pt; }
+body.compact .req .text { font-size: 10.5pt; }
+body.compact table { font-size: 9pt; margin: 4px 0 7px; }
+body.compact th, body.compact td { padding: 3px 6px; }
+body.compact .band { padding: 7px 14px; margin-bottom: 10px; }
+body.compact li { margin-bottom: 0.1em; }
+body.compact .cover { font-size: 11pt; }
+table.ws.key td { width: 0.22in; height: 0.22in; font-size: 8.5pt; }

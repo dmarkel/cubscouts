@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aquanaut Scout Handouts</title>
+<link rel="stylesheet" href="../assets/print.css">
+<style>
+  .sd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; margin: 8px 0 12px; }
+  .sd-item { display: flex; gap: 8px; align-items: flex-start; border: 1.5px solid var(--line); border-radius: 8px; padding: 7px 9px; }
+  .sd-item .letter-tile { flex: none; width: 1.7em; height: 1.7em; font-size: 14pt; }
+  .sd-item b { color: var(--blue); }
+  .big-rule { text-align: center; font-size: 20pt; font-weight: 800; color: var(--blue);
+    border: 3px dashed var(--gold); border-radius: 12px; padding: 8px; margin: 10px 0; }
+  .steps { counter-reset: s; list-style: none; padding-left: 0; }
+  .steps li { counter-increment: s; position: relative; padding-left: 2.1em; margin-bottom: 6px; }
+  .steps li::before { content: counter(s); position: absolute; left: 0; top: -1px; width: 1.5em; height: 1.5em;
+    background: var(--blue); color: #fff; border-radius: 50%; text-align: center; font-weight: 700; line-height: 1.5em; font-size: 10.5pt; }
+  .umbles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; text-align: center; margin: 8px 0; }
+  .umbles div { border: 2px solid var(--blue); border-radius: 10px; padding: 8px 4px; }
+  .umbles .w { font-weight: 800; color: var(--blue); font-size: 14pt; display: block; }
+  .umbles .emoji { font-size: 22pt; display: block; }
+  .wordlist { columns: 4; list-style: none; padding: 0; text-align: center; font-weight: 700; letter-spacing: 0.04em; }
+  .q { margin-bottom: 10px; }
+  .q .lines div { height: 0.32in; }
+  .fill { display: inline-block; border-bottom: 1.5px solid var(--ink); min-width: 1.4in; }
+  svg { display: block; margin: 0 auto; max-width: 100%; }
+</style>
+</head>
+<body class="handout">
+
+<!-- ============ 1: SAFETY FIELD GUIDE ============ -->
+<section class="page">
+  <div class="band"><span class="pack">Pack 149 &middot; Webelos</span><span class="tag">Aquanaut</span></div>
+  <div class="name-line">Name: <span class="line"></span></div>
+  <h1>Aquanaut Safety Field Guide</h1>
+  <p class="lede">Scouts follow <b>Safe Swim Defense</b> every time we swim. Remember the 8 parts with this silly sentence:</p>
+  <div class="big-rule">Quick Pups Swim Rapidly,<br>Lazy Alligators Bask Daily</div>
+
+  <div class="sd-grid">
+    <div class="sd-item"><span class="letter-tile">Q</span><div><b>Qualified Supervision</b><br>A trained adult is in charge.</div></div>
+    <div class="sd-item"><span class="letter-tile">P</span><div><b>Personal Health Review</b><br>Tell an adult if you feel sick.</div></div>
+    <div class="sd-item"><span class="letter-tile">S</span><div><b>Safe Area</b><br>The water has been checked and marked.</div></div>
+    <div class="sd-item"><span class="letter-tile">R</span><div><b>Response Personnel</b><br>Lifeguards are ready to help.</div></div>
+    <div class="sd-item"><span class="letter-tile">L</span><div><b>Lookout</b><br>Someone watches the whole area.</div></div>
+    <div class="sd-item"><span class="letter-tile">A</span><div><b>Ability Groups</b><br>Swim only in your area.</div></div>
+    <div class="sd-item"><span class="letter-tile">B</span><div><b>Buddy System</b><br>Never swim alone!</div></div>
+    <div class="sd-item"><span class="letter-tile">D</span><div><b>Discipline</b><br>Follow the rules. Walk, don't run.</div></div>
+  </div>
+
+  <div class="cols">
+    <div class="card">
+      <h3>Ability Groups</h3>
+      <p style="margin-bottom:4px"><b>Nonswimmer:</b> shallow water</p>
+      <p style="margin-bottom:4px"><b>Beginner:</b> water just over your head</p>
+      <p style="margin-bottom:0"><b>Swimmer:</b> the deep area</p>
+      <p class="muted" style="font-size:10.5pt; margin:6px 0 0">Your swim test decides your group. Practice to move up!</p>
+    </div>
+    <div class="card">
+      <h3>When you hear &ldquo;Buddy Check!&rdquo;</h3>
+      <ol class="steps" style="margin-bottom:0">
+        <li>Grab your buddy's hand.</li>
+        <li>Raise your hands up high.</li>
+        <li>Freeze and stay quiet while adults count.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2: ORDER OF RESCUE ============ -->
+<section class="page">
+  <div class="band"><span class="pack">Pack 149 &middot; Webelos</span><span class="tag">Aquanaut</span></div>
+  <h1>Reach or Throw &mdash; Don't Go!</h1>
+  <p class="lede">The <b>order of rescue</b> goes from safest to most dangerous for the rescuer.</p>
+
+  <div class="cols">
+    <div class="card">
+      <h3><span class="letter-tile">1</span>REACH</h3>
+      <svg viewBox="0 0 300 120" width="280" aria-label="Scout lying on a dock reaching a pole to a swimmer">
+        <rect x="0" y="60" width="130" height="20" fill="#b9a27a"/>
+        <rect x="130" y="66" width="170" height="54" fill="#bfe0f5"/>
+        <path d="M130 66 q10 -6 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0" fill="none" stroke="#3a8cc4" stroke-width="2"/>
+        <circle cx="30" cy="52" r="8" fill="none" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="38" y1="55" x2="100" y2="56" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="38" y1="55" x2="10" y2="57" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="95" y1="54" x2="228" y2="68" stroke="#f2a900" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="245" cy="74" r="9" fill="none" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="236" y1="70" x2="226" y2="60" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="254" y1="70" x2="266" y2="56" stroke="#1d1d1f" stroke-width="3"/>
+      </svg>
+      <p>Lie down on the deck and reach out with a pole, pool noodle, towel, or your arm. Stay low so you don't get pulled in!</p>
+    </div>
+    <div class="card">
+      <h3><span class="letter-tile">2</span>THROW</h3>
+      <svg viewBox="0 0 300 120" width="280" aria-label="Scout on shore throwing a ring buoy past a swimmer">
+        <rect x="0" y="80" width="110" height="40" fill="#b9a27a"/>
+        <rect x="110" y="86" width="190" height="34" fill="#bfe0f5"/>
+        <path d="M110 86 q10 -6 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0" fill="none" stroke="#3a8cc4" stroke-width="2"/>
+        <circle cx="50" cy="30" r="9" fill="none" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="50" y1="39" x2="50" y2="62" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="50" y1="62" x2="40" y2="80" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="50" y1="62" x2="60" y2="80" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="50" y1="46" x2="72" y2="36" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="50" y1="46" x2="36" y2="56" stroke="#1d1d1f" stroke-width="3"/>
+        <path d="M72 36 Q170 -10 262 84" fill="none" stroke="#1d1d1f" stroke-width="2" stroke-dasharray="5 4"/>
+        <circle cx="262" cy="88" r="11" fill="none" stroke="#f2a900" stroke-width="7"/>
+        <circle cx="222" cy="92" r="9" fill="none" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="214" y1="88" x2="204" y2="76" stroke="#1d1d1f" stroke-width="3"/>
+        <line x1="230" y1="88" x2="240" y2="76" stroke="#1d1d1f" stroke-width="3"/>
+      </svg>
+      <p>Too far to reach? Throw something that floats. Hold the rope end, yell <b>&ldquo;Rope!&rdquo;</b>, and throw it <b>past</b> them.</p>
+    </div>
+  </div>
+
+  <div class="cols" style="margin-top:12px">
+    <div class="card" style="border-style:dashed">
+      <h3><span class="letter-tile">3</span>ROW</h3>
+      <p style="margin-bottom:0">A trained adult uses a boat. <b>Adults only.</b></p>
+    </div>
+    <div class="card" style="border-style:dashed">
+      <h3><span class="letter-tile">4</span>GO</h3>
+      <p style="margin-bottom:0">A trained lifeguard swims out with a float. <b>Lifeguards only.</b></p>
+    </div>
+  </div>
+
+  <div class="big-rule" style="margin-top:14px; font-size:17pt">YELL for help &rarr; REACH or THROW &rarr; DON'T GO!</div>
+
+  <h3>Look around! Circle things you could use to REACH or THROW:</h3>
+  <p style="font-size:14pt; text-align:center; line-height:2">pool noodle &nbsp;&middot;&nbsp; towel &nbsp;&middot;&nbsp; rope &nbsp;&middot;&nbsp; life jacket &nbsp;&middot;&nbsp; empty cooler &nbsp;&middot;&nbsp; tree branch &nbsp;&middot;&nbsp; shirt &nbsp;&middot;&nbsp; ring buoy &nbsp;&middot;&nbsp; kickboard &nbsp;&middot;&nbsp; paddle</p>
+  <p class="muted" style="text-align:center; font-size:10.5pt">(Trick question: they all work!)</p>
+</section>
+
+<!-- ============ 3: HYPOTHERMIA ============ -->
+<section class="page">
+  <div class="band"><span class="pack">Pack 149 &middot; Webelos</span><span class="tag">Aquanaut</span></div>
+  <h1>Beat the Chill!</h1>
+  <p class="lede"><b>Hypothermia</b> (hi-po-THER-mee-uh) is when your body loses heat faster than it can make it.<br>Water steals heat about <b>25 times faster</b> than air &mdash; even on a sunny day!</p>
+
+  <div class="card" style="text-align:center; margin-bottom:10px">
+    <h3 style="margin-bottom:2px">Warning Sign #1: SHIVERING</h3>
+    <p style="margin-bottom:0">Shivering is your body's alarm bell. <b>When you shiver, get out, dry off, and warm up.</b></p>
+  </div>
+
+  <h3 style="text-align:center">If it gets worse, watch for the UMBLES</h3>
+  <div class="umbles">
+    <div><span class="emoji">&#x1F9B6;</span><span class="w">Stumbles</span>tripping, clumsy</div>
+    <div><span class="emoji">&#x1F5E3;&#xFE0F;</span><span class="w">Mumbles</span>can't talk clearly</div>
+    <div><span class="emoji">&#x270B;</span><span class="w">Fumbles</span>fingers don't work</div>
+    <div><span class="emoji">&#x1F620;</span><span class="w">Grumbles</span>cranky, confused</div>
+  </div>
+  <p style="text-align:center">Also look for <b>blue lips</b> and <b>blue fingers</b>. People who are too cold often don't notice &mdash; <b>that's why buddies watch each other!</b></p>
+
+  <div class="cols">
+    <div class="card">
+      <h3>&#x1F6E1;&#xFE0F; Prevent it</h3>
+      <ul class="checks" style="margin-bottom:0">
+        <li>Get out when you start shivering</li>
+        <li>Towel off right away</li>
+        <li>Put on dry clothes or a sweatshirt</li>
+        <li>Stay out of the wind</li>
+        <li>Eat a snack and drink water</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>&#x1F691; Treat it</h3>
+      <ul class="checks" style="margin-bottom:0">
+        <li><b>Tell an adult right away!</b></li>
+        <li>Get out of the water and wind</li>
+        <li>Swap wet clothes for dry ones</li>
+        <li>Wrap up in a blanket or towel</li>
+        <li>Warm (not hot) drink if they're awake</li>
+      </ul>
+    </div>
+  </div>
+  <div class="box safety" style="margin-top:12px">
+    <p style="margin-bottom:0">If someone is stumbling, confused, or super sleepy, it's an emergency. <b>Get an adult to call 911.</b></p>
+  </div>
+</section>
+
+<!-- ============ 4: SWIM DAY SKILLS ============ -->
+<section class="page">
+  <div class="band"><span class="pack">Pack 149 &middot; Webelos</span><span class="tag">Aquanaut</span></div>
+  <h1>Swim Day Skills</h1>
+  <p class="lede">Remember: requirements that say <b>&ldquo;attempt&rdquo;</b> mean <b>try your best</b>. Trying earns it!</p>
+
+  <div class="card">
+    <h3>Treading Water: stay up, stay calm</h3>
+    <ol class="steps">
+      <li><b>Stay tall</b> like you're standing up, chin at the water.</li>
+      <li><b>Arms: &ldquo;spread the peanut butter.&rdquo;</b> Hands flat, sweep them out and in just under the water.</li>
+      <li><b>Legs: pick one.</b> Bicycle (pedal slowly), scissor (one forward, one back), or frog kick.</li>
+      <li><b>Go slow and breathe.</b> Splashing tires you out. Relaxing keeps you up!</li>
+    </ol>
+    <p style="margin-bottom:0">My goal: <span class="fill"></span> seconds &nbsp;&nbsp; I did: <span class="fill"></span> seconds</p>
+  </div>
+
+  <div class="cols" style="margin-top:12px">
+    <div class="card">
+      <h3>Swimmer Test</h3>
+      <ol class="steps" style="margin-bottom:0; font-size:11.5pt">
+        <li>Jump in feet first where it's over your head.</li>
+        <li>Swim <b>75 yards</b> with strong strokes (crawl, breaststroke, sidestroke, or trudgen).</li>
+        <li>Swim <b>25 yards</b> of easy backstroke.</li>
+        <li>No stopping! Make at least one sharp turn.</li>
+        <li>Finish by <b>floating</b> to rest.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>Beginner Test</h3>
+      <ol class="steps" style="margin-bottom:0; font-size:11.5pt">
+        <li>Jump in feet first where it's over your head.</li>
+        <li>Level off and swim <b>25 feet</b>.</li>
+        <li>Stop, turn around sharply.</li>
+        <li>Swim back to where you started.</li>
+      </ol>
+      <p style="font-size:11pt; margin:8px 0 0" class="muted">Not a beginner or swimmer yet? You're a <b>nonswimmer</b> for now &mdash; and every swimmer started there!</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h3>My Swim Day</h3>
+    <p>My buddy: <span class="fill" style="min-width:2.2in"></span> &nbsp; My ability group: <span class="fill"></span></p>
+    <p style="margin-bottom:0">Something I want to practice next: <span class="fill" style="min-width:3.2in"></span></p>
+  </div>
+</section>
+
+<!-- ============ 5: WORD SEARCH ============ -->
+<section class="page">
+  <div class="band"><span class="pack">Pack 149 &middot; Webelos</span><span class="tag">Aquanaut</span></div>
+  <div class="name-line">Name: <span class="line"></span></div>
+  <h1>Aquanaut Word Search</h1>
+  <p class="lede">Words go across &rarr;, down &darr;, or diagonally &searr;.</p>
+  <table class="ws"><tr><td>B</td><td>L</td><td>I</td><td>F</td><td>E</td><td>G</td><td>U</td><td>A</td><td>R</td><td>D</td><td>B</td><td>G</td><td>M</td><td>U</td></tr><tr><td>F</td><td>M</td><td>H</td><td>Y</td><td>P</td><td>O</td><td>T</td><td>H</td><td>E</td><td>R</td><td>M</td><td>I</td><td>A</td><td>K</td></tr><tr><td>A</td><td>Q</td><td>U</td><td>A</td><td>N</td><td>A</td><td>U</td><td>T</td><td>S</td><td>P</td><td>L</td><td>A</td><td>S</td><td>H</td></tr><tr><td>S</td><td>E</td><td>O</td><td>B</td><td>E</td><td>G</td><td>I</td><td>N</td><td>N</td><td>E</td><td>R</td><td>P</td><td>R</td><td>R</td></tr><tr><td>S</td><td>I</td><td>L</td><td>V</td><td>T</td><td>K</td><td>L</td><td>D</td><td>A</td><td>L</td><td>E</td><td>W</td><td>E</td><td>W</td></tr><tr><td>D</td><td>A</td><td>A</td><td>B</td><td>J</td><td>J</td><td>O</td><td>S</td><td>G</td><td>K</td><td>F</td><td>U</td><td>S</td><td>M</td></tr><tr><td>I</td><td>R</td><td>F</td><td>L</td><td>I</td><td>A</td><td>O</td><td>W</td><td>H</td><td>B</td><td>U</td><td>H</td><td>C</td><td>I</td></tr><tr><td>V</td><td>E</td><td>W</td><td>E</td><td>G</td><td>D</td><td>K</td><td>I</td><td>T</td><td>T</td><td>U</td><td>D</td><td>U</td><td>A</td></tr><tr><td>W</td><td>A</td><td>H</td><td>S</td><td>T</td><td>C</td><td>O</td><td>M</td><td>R</td><td>D</td><td>H</td><td>D</td><td>E</td><td>E</td></tr><tr><td>J</td><td>C</td><td>I</td><td>A</td><td>H</td><td>Y</td><td>U</td><td>M</td><td>E</td><td>F</td><td>S</td><td>R</td><td>D</td><td>N</td></tr><tr><td>T</td><td>H</td><td>S</td><td>H</td><td>A</td><td>I</td><td>T</td><td>E</td><td>A</td><td>O</td><td>L</td><td>N</td><td>O</td><td>Y</td></tr><tr><td>V</td><td>S</td><td>T</td><td>K</td><td>M</td><td>V</td><td>V</td><td>R</td><td>D</td><td>K</td><td>W</td><td>O</td><td>E</td><td>W</td></tr><tr><td>J</td><td>U</td><td>L</td><td>M</td><td>P</td><td>L</td><td>O</td><td>E</td><td>O</td><td>V</td><td>S</td><td>A</td><td>A</td><td>A</td></tr><tr><td>W</td><td>A</td><td>E</td><td>P</td><td>G</td><td>R</td><td>D</td><td>K</td><td>R</td><td>V</td><td>J</td><td>N</td><td>G</td><td>T</td></tr></table>
+  <ul class="wordlist">
+    <li>AQUANAUT</li><li>BEGINNER</li><li>BUDDY</li><li>FLOAT</li><li>HYPOTHERMIA</li><li>LIFEGUARD</li><li>LOOKOUT</li><li>REACH</li><li>RESCUE</li><li>SAFETY</li><li>SHIVER</li><li>SPLASH</li><li>SWIMMER</li><li>THROW</li><li>TREAD</li><li>WHISTLE</li>
+  </ul>
+</section>
+
+<!-- ============ 6: CHALLENGE QUIZ ============ -->
+<section class="page">
+  <div class="band"><span class="pack">Pack 149 &middot; Webelos</span><span class="tag">Aquanaut</span></div>
+  <div class="name-line">Name: <span class="line"></span></div>
+  <h1>Aquanaut Challenge</h1>
+  <p class="lede">How much do you remember? Fill in the blanks.</p>
+
+  <div class="q">1. Never swim alone! Always swim with a <span class="fill"></span>.</div>
+  <div class="q">2. If someone is in trouble in the water, a Cub Scout should yell for help, then <span class="fill"></span> or <span class="fill"></span> &mdash; but DON'T GO!</div>
+  <div class="q">3. The first warning sign that you are getting too cold is <span class="fill"></span>.</div>
+  <div class="q">4. Name the four &ldquo;Umbles&rdquo;:<br>
+    <span class="fill"></span> &nbsp; <span class="fill"></span> &nbsp; <span class="fill"></span> &nbsp; <span class="fill"></span></div>
+  <div class="q">5. The person who watches the whole swim area from a spot where they can see everyone is the <span class="fill"></span>.</div>
+  <div class="q">6. How far do you swim in the swimmer test? <span class="fill"></span> yards</div>
+  <div class="q">7. On a wet pool deck, you should always <span class="fill"></span>, never run.</div>
+  <div class="q">8. What are the three ability groups?<br>
+    <span class="fill"></span> &nbsp; <span class="fill"></span> &nbsp; <span class="fill"></span></div>
+
+  <div class="card" style="margin-top:14px">
+    <h3>Draw it!</h3>
+    <p style="margin-bottom:0">Draw yourself doing a <b>reach</b> or <b>throw</b> rescue the safe way.</p>
+    <div style="height:2.6in"></div>
+  </div>
+</section>
+
+<!-- ============ 7: TRACKER ============ -->
+<section class="page">
+  <div class="band"><span class="pack">Pack 149 &middot; Webelos</span><span class="tag">Aquanaut</span></div>
+  <div class="name-line">Name: <span class="line"></span></div>
+  <h1>My Aquanaut Tracker</h1>
+  <p class="lede">Check off each requirement as you finish it. Have your den leader initial it!</p>
+  <table style="font-size:12pt">
+    <tr><th class="center" style="width:0.5in">Done</th><th class="center" style="width:0.4in">#</th><th>Requirement</th><th style="width:0.9in">Date</th><th style="width:0.9in">Leader initials</th></tr>
+    <tr><td class="center">&#x2610;</td><td class="center">1</td><td>I can tell the safety steps we take before swimming (Safe Swim Defense).</td><td></td><td></td></tr>
+    <tr><td class="center">&#x2610;</td><td class="center">2</td><td>I can explain the order of rescue and showed a <b>reach</b> and a <b>throw</b> rescue from land.</td><td></td><td></td></tr>
+    <tr><td class="center">&#x2610;</td><td class="center">3</td><td>I learned how to prevent and treat hypothermia.</td><td></td><td></td></tr>
+    <tr><td class="center">&#x2610;</td><td class="center">4</td><td>I tried treading water.</td><td></td><td></td></tr>
+    <tr><td class="center">&#x2610;</td><td class="center">5</td><td>I tried the swimmer test.</td><td></td><td></td></tr>
+    <tr><td class="center">&#x2610;</td><td class="center">6</td><td>I had 30+ minutes of free swim with my buddy, in my ability group.</td><td></td><td></td></tr>
+  </table>
+
+  <div class="card" style="margin-top:16px">
+    <h3>My Aquanaut Promise</h3>
+    <p>Whenever I'm near water, I will:</p>
+    <ul class="checks">
+      <li>Always swim with a buddy.</li>
+      <li>Stay in my ability group's area.</li>
+      <li>Listen to lifeguards and adults.</li>
+      <li>Reach or Throw &mdash; but never Go &mdash; if someone needs help.</li>
+      <li>Get out and warm up when I start shivering.</li>
+    </ul>
+    <p style="margin-top:14px; margin-bottom:0">Signed: <span class="fill" style="min-width:2.6in"></span> &nbsp; Date: <span class="fill"></span></p>
+  </div>
+  <footer class="foot">Cub Scout Pack 149 &middot; Webelos Aquanaut Adventure</footer>
+</section>
+
+</body>
+</html>
