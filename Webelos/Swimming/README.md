@@ -7,7 +7,7 @@ dry-land den meeting (requirements 1–3) and a swim day at a pool with lifeguar
 | File | Who it's for | Print |
 |---|---|---|
 | [Leader-Guide.pdf](Leader-Guide.pdf) | Den leader / adult running the adventure: goals, safety & planning, meeting plans, requirement-by-requirement "say it like this" scripts, activities, den tracking sheet, answer keys | 1 copy (12 pages) |
-| [Scout-Handouts.pdf](Scout-Handouts.pdf) | Scouts: Safety Field Guide, Reach or Throw, Beat the Chill, Swim Day Skills, Word Search, Aquanaut Challenge, My Aquanaut Tracker | 1 set per scout (7 pages) |
+| [Scout-Handouts.pdf](Scout-Handouts.pdf) | Scouts: front has the 5 things to know (buddy system, swim safe rules, Reach or Throw, too cold, swim day); back has a word search and a requirement tracker | 1 double-sided sheet per scout |
 | [Parent-Letter.pdf](Parent-Letter.pdf) | Families: swim-day details, what to bring, health form reminder, tear-off RSVP | 1 per family |
 
 ## Requirements covered
