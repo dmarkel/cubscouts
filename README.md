@@ -3,6 +3,7 @@
 Printable leader guides, scout handouts, and family notes for Pack 149.
 
 - [Webelos](Webelos/) — 4th grade den adventures
+- [Pack-Communication](Pack-Communication/) — emails and announcements to pack families
 
 ## Editing and printing
 
