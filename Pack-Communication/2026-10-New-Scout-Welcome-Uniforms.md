@@ -1,8 +1,4 @@
-# New Scout Welcome & Uniform Email (Oct 2026)
 
-**To:** New Pack 149 families
-**From:** Dave Markel, Cubmaster
-**Send by:** as soon as possible (gives families time to get uniforms before Tuesday, October 6)
 
 > Before sending, fill in the four `[BRACKETED]` items with details from the pack website
 > (Resources page and the uniform reference page).
@@ -69,13 +65,9 @@ A fun way to practice: pick one point of the Scout Law each night at dinner and 
 
 If you have any questions, please reach out to your den leader. If you're not sure how to reach your den leader, contact me and I'll connect you:
 
-Dave Markel
-dmarkel@gmail.com
-713-823-8483
-
 We're excited to have you with us, and we'll see you on October 6!
 
 Yours in Scouting,
 
-Dave Markel
+
 Cubmaster, Pack 149
